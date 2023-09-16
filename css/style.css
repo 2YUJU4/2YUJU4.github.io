@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "kopubworld_batang_pro_medium";
+  src: url("./font/kopubworld_batang_pro_medium.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  color: aliceblue;
+  font-family: "kopubworld_batang_pro_medium";
+  box-sizing: border-box;
+  padding: auto;
+}
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /*까만색(0,0,0) 80% 불투명도*/
+}
+
+.hidden {
+  display: none;
+}
+
+input {
+  outline: none;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid aliceblue;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* background Image */
+.bgImg {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+/* clock */
+.clock {
+  position: absolute;
+  font-size: 100px;
+  font-weight: bold;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+/* login-form */
+#login-form,
+.loginName,
+.loginBtn {
+  background-color: transparent;
+}
+
+#login-form {
+  position: absolute;
+  left: 50%;
+  top: 54%;
+  transform: translate(-50%, -50%);
+}
+
+.loginBtn {
+  border: none;
+  cursor: pointer;
+}
+
+/* greeting */
+.greeting {
+  position: absolute;
+  left: 50%;
+  top: 53%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+
+/* todo */
+#todo-form h2 {
+  font-size: 18px;
+}
+
+#todo-form {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#todo-list {
+  position: absolute;
+  left: 50%;
+  top: 76%;
+  transform: translate(-50%, -50%);
+}
+
+#todo-list li {
+  text-align: center;
+  list-style: korean-hangul-formal;
+}
+
+#todo-list li button {
+  border: none;
+  background-color: transparent;
+}
+
+#todo-list li button:hover {
+  cursor: pointer;
+}
+
+#todo-form input:focus {
+  outline: none;
+}
+
+/* quote */
+.quote {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}
+
+.weather {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  transform: translate(-5%, -20%);
+}
+
+.weather span {
+  display: block;
+  text-align: right;
+}
